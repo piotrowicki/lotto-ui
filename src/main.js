@@ -9,4 +9,4 @@ import 'primeicons/primeicons.css'                          //icons
 
 const app = createApp(App);
 app.use(PrimeVue);
-createApp(App).mount('#app')
+app.mount('#app')
