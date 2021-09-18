@@ -5,10 +5,10 @@ import Home from "@/views/Home.vue";
 const routes = [
     {
         path: "/",
-        redirect: "/stats"
+        redirect: "/lotto"
     },
     {
-        path: "/stats",
+        path: "/lotto",
         name: "Home",
         component: Home,
     },

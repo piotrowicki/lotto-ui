@@ -2,7 +2,7 @@ import http from "../http-common";
 
 class ChartService {
     fetchData() {
-        return http.get("/data");
+        return http.get("/lotto/stats");
     }
 }
 
