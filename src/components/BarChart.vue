@@ -36,12 +36,12 @@ export default {
         .then((response) => {
           const responseData = response.data;
           this.chartData = {
-            labels: responseData.map((item) => item.labels),
+            labels: responseData.map((item) => item.number),
             datasets: [
               {
-                label: "Number",
+                label: "Numer",
                 backgroundColor: "#42A5F5",
-                data: responseData.map((item) => item.numbers),
+                data: responseData.map((item) => item.quantity),
               },
             ],
           };
