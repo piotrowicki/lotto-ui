@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: "http://127.0.0.1:8082/api",
+    baseURL: "http://pomocdrogowaostroda.com.pl:8082/api",
     headers: {
         "Content-type": "application/json"
     }
