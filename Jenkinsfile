@@ -14,5 +14,10 @@ pipeline {
                 sh 'docker build -t ${IMAGE_NAME} .'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'docker service update --force lotto_ui'
+            }
+        }
     }
 }
