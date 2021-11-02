@@ -23,4 +23,9 @@ const router = createRouter({
     routes,
 });
 
+router.beforeEach((to, from, next) => {
+    document.title = 'Lotto | ' + to.name;
+    next();
+});
+
 export default router;
