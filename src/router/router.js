@@ -14,6 +14,7 @@ const routes = [
     },
     {
         path: '/:pathMatch(.*)*',
+        name: "Not Found",
         component: NotFound,
     },
 ];
