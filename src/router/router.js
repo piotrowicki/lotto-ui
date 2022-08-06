@@ -6,10 +6,10 @@ import Login from "@/views/Login.vue";
 const routes = [
     {
         path: "/",
-        redirect: "/lotto"
+        redirect: "/lotto/stats"
     },
     {
-        path: "/lotto",
+        path: "/lotto/stats",
         name: "Home",
         component: Home,
     },
