@@ -18,6 +18,9 @@ COPY . .
 # resolve conflict with vue-loader
 RUN npm install vue-loader@15.9.8
 
+# fix vulberabilities
+RUN npm audit fix --force
+
 # build app for production with minification
 RUN npm run build
 
