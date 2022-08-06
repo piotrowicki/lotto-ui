@@ -15,9 +15,6 @@ RUN npm install
 # copy project files and folders to the current working directory (i.e. 'app' folder)
 COPY . .
 
-# resolve conflict with vue-loader
-RUN npm install vue-loader@15.9.8
-
 # build app for production with minification
 RUN npm run build
 
