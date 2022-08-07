@@ -7,7 +7,7 @@
 
 <script>
 import Chart from "primevue/chart";
-import ChartService from "../services/ChartService";
+import LottoService from "../services/LottoService";
 
 export default {
   data() {
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     renderChart() {
-      ChartService.fetchData()
+      LottoService.fetchData()
         .then((response) => {
           const responseData = response.data;
           this.chartData = {
