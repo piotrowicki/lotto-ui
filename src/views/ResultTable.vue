@@ -35,7 +35,7 @@ export default {
     Column,
     DataTable,
   },
-  mounted() {
+  created() {
     LottoService.getResults()
       .then((response) => {
         this.results = response.data;
