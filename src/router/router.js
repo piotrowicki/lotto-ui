@@ -24,11 +24,11 @@ const routes = [
         name: "Results",
         component: ResultTable,
     },
-    {
-        path: '/:pathMatch(.*)*',
-        name: "Not Found",
-        component: NotFound,
-    },
+    // {
+    //     path: '/:pathMatch(.*)*',
+    //     name: "Not Found",
+    //     component: NotFound,
+    // },
 ];
 
 const router = createRouter({
