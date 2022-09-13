@@ -15,7 +15,7 @@ app.use(PrimeVue);
 app.mount('#app')
 
 let initOptions = {
-    url: 'http://pomocdrogowaostroda.com.pl:8180/', realm: 'lotto-realm', clientId: 'lotto-app', onLoad: 'login-required'
+    url: 'http://127.0.0.1:8180/', realm: 'lotto-realm', clientId: 'lotto-app', onLoad: 'login-required'
 }
 
 let keycloak = new Keycloak(initOptions);
