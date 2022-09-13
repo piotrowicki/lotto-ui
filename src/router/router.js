@@ -1,5 +1,5 @@
 import { createWebHashHistory, createRouter } from "vue-router";
-// import NotFound from "@/views/NotFound.vue";
+import NotFound from "@/views/NotFound.vue";
 import Home from "@/views/Home.vue";
 import Login from "@/views/Login.vue";
 import ResultTable from "@/views/ResultTable.vue";
@@ -24,11 +24,11 @@ const routes = [
         name: "Results",
         component: ResultTable,
     },
-    // {
-    //     path: '/:pathMatch(.*)*',
-    //     name: "Not Found",
-    //     component: NotFound,
-    // },
+    {
+        path: '/:pathMatch(.*)*',
+        name: "Not Found",
+        component: NotFound,
+    },
 ];
 
 const router = createRouter({
