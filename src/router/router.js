@@ -1,5 +1,5 @@
 import { createWebHashHistory, createRouter } from "vue-router";
-import NotFound from "@/views/NotFound.vue";
+// import NotFound from "@/views/NotFound.vue";
 import Home from "@/views/Home.vue";
 import Login from "@/views/Login.vue";
 import ResultTable from "@/views/ResultTable.vue";
